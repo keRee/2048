@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2048</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<h1><a class="title">2048</a></h1>
+	<p id="score"></p>
+	<div id="size-bloc">
+		<p id="size-title">Size: </p>
+		<div class="form-inline">
+			<input type="number" id="size" value="4" class="form-control">
+			<button id="change-size" class="btn btn-primary">ok</button>
+		</div>
+	</div>
+	<div id="canvas-bloc">
+		<canvas id="canvas" width="500" height="500"></canvas>
+	</div>
+</div>
+
+
+<script src="main.js">	</script>
+</body>
+</html>
