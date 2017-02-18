@@ -63,7 +63,7 @@ function drawCell(cell){
 		case 256: ctx.fillStyle = "#f4ce4f";break;
 		case 512: ctx.fillStyle = "#CD950C";break;
 		case 1024: ctx.fillStyle = "#e3ad15";break;
-		case 2048: ctx.fillStyle = "#edc605";break;
+		case 2048: ctx.fillStyle = "#edbf05";break;
 		case 4096: ctx.fillStyle = "#ffa570";break;
 		default : ctx.fillStyle = "#ccc0b0";
 	}
@@ -71,14 +71,14 @@ function drawCell(cell){
 	ctx.fill();
 
 	if (cell.value) {
-		var fontSize1 = width*2/5;
+		var fontSize1 = width*3/8;
 	    fontSize = width/2;
 	    ctx.font = fontSize + "px Arial";
 	    //ctx.fillStyle = '#999';
 	    switch(cell.value){
 	    	case 2: ctx.fillStyle = "#888";break;
 	    	case 4: ctx.fillStyle = "#999";break;
-	    	default: ctx.fillStyle = "#fcfcfc";
+	    	default: ctx.fillStyle = "#E3E3E3";
 	    	
 	    }
 	    switch(cell.value){
