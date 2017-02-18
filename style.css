@@ -1,0 +1,10 @@
+#canvas{
+	background: #bbada0;
+	margin: 20px 0;
+}
+a:link,a:visited{color: #42b983;}
+a:hover,a:active{color: #42b983;}
+.title{color: #42b983;cursor: pointer;}
+
+#score{font-size: 42px;color: #999;}
+#size-title{color: #666;font-weight: bold;}
