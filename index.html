@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimum-scale=1">
 	<title>2048</title>
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="style.css">
@@ -19,10 +20,21 @@
 	</div>
 	<div id="canvas-bloc">
 		<canvas id="canvas" width="500" height="500"></canvas>
+
+		<div id="overlay">
+			<h3 class="title">Game is Over</h3>
+			<p id="total-score"></p>
+			<button class="btn btn-primary" id="start-again">Play Again</button>
+		</div>
+		<div id="tips">
+			<h3 class="title">Need help?</h3>
+			<p>You can choose <span id="msg"></span>,</br>it's will be help to Play continue!</p>
+		</div>
 	</div>
 </div>
 
 
-<script src="main.js">	</script>
+<!-- <script src="main.js">	</script> -->
+<script src="index.js"></script>
 </body>
 </html>
