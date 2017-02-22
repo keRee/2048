@@ -5,36 +5,38 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimum-scale=1">
 	<title>2048</title>
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-	<link rel="stylesheet" href="style.css">
+	<!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
 <div class="container">
 	<h1><a class="title">2048</a></h1>
 	<p id="score"></p>
-	<div id="size-bloc">
+	<div id="size-bloc" class="asd">
 		<p id="size-title">Size: </p>
 		<div class="form-inline">
-			<input type="number" id="size" value="4" class="form-control">
-			<button id="change-size" class="btn btn-primary">ok</button>
+			<button class="btn btn-default btn-primary">4x4</button>
+			<button class="btn btn-default">5x5</button>
+			<button class="btn btn-default">6x6</button>
 		</div>
 	</div>
 	<div id="canvas-bloc">
-		<canvas id="canvas" width="500" height="500"></canvas>
+		<canvas id="canvas" width="400" height="400"></canvas>
 
-		<div id="overlay">
+		<!-- <div id="overlay">	
 			<h3 class="title">Game is Over</h3>
 			<p id="total-score"></p>
 			<button class="btn btn-primary" id="start-again">Play Again</button>
-		</div>
-		<div id="tips">
+		</div> -->
+		<!-- <div id="tips">
 			<h3 class="title">Need help?</h3>
 			<p>You can choose <span id="msg"></span>,</br>it's will be help to Play continue!</p>
-		</div>
+		</div> -->
 	</div>
 </div>
 
 
-<!-- <script src="main.js">	</script> -->
-<script src="index.js"></script>
+
+<!-- <script src="index.js"></script> -->
+<script src="main.js">	</script>
 </body>
 </html>
