@@ -1,5 +1,5 @@
 console.time('S');
-
+console.log('test')
 function g(ele) {
 	return typeof ele === "string" ? document.getElementById(ele) : ele;
 }
@@ -73,14 +73,14 @@ function drawCell (cell){
 	    	case 2: ctx.fillStyle = "#888";break;
 	    	case 4: ctx.fillStyle = "#999";break;
 	    	default: ctx.fillStyle = "#E3E3E3";
-	    	
+
 	    }
 	    switch(cell.value){
 	    	case 1024: ctx.font = fontSize1 + "px Arial";break;
 	    	case 2048: ctx.font = fontSize1 + "px Arial";break;
 	    	case 4096: ctx.font = fontSize1 + "px Arial";break;
 	    	default:  ctx.font = fontSize + "px Arial";
-	    	
+
 	    }
 	    ctx.textAlign = "center";
 	    ctx.fillText(cell.value, cell.x + width / 2, cell.y + width / 2 + width/7);
@@ -124,7 +124,7 @@ function finishGame(){
 		}
 
 		// setTimeout(function(){
-			
+
 		// },20000)
 	}else{
 		canvas.style.opacity = 0.5;
@@ -159,8 +159,8 @@ function checkGame (){
 	}else{
 		//console.log('game can continue')
 	}
-	
-	
+
+
 }
 
 function startGame () {
@@ -221,7 +221,7 @@ function moveUp(){
 					}
 				}
 			}
-			
+
 		}
 	}
 
@@ -255,7 +255,7 @@ function moveRight(){
 					}else{
 						break;
 					}
-					
+
 				};
 			};
 		}
@@ -285,7 +285,7 @@ function moveDown(){
 
 						s += cells[row][i].value;
 						score.innerHTML = 'Score:' + s;
-						
+
 						break;
 					}else{
 						break;
@@ -318,14 +318,14 @@ function moveLeft(){
 
 						s += cells[i][col].value;
 						score.innerHTML = 'Score:' + s;
-						
+
 						break;
 					}else{
 						break;
 					}
 				}
 			}
-			
+
 		}
 	}
 
@@ -411,4 +411,3 @@ function checkUp(){
 
 
 console.timeEnd('S');
-
