@@ -1,9 +1,5 @@
 console.time('S');
-<<<<<<< HEAD
-console.log('test11220000000')
-=======
 console.log('tes111t1122')
->>>>>>> origin/master
 function g(ele) {
 	return typeof ele === "string" ? document.getElementById(ele) : ele;
 }
