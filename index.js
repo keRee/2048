@@ -1,5 +1,5 @@
 console.time('S');
-console.log('tes111t122222122')
+console.log('test')
 function g(ele) {
 	return typeof ele === "string" ? document.getElementById(ele) : ele;
 }
